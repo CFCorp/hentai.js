@@ -4,7 +4,7 @@
     "snekfetch": "^3.6.4"
   },
   "name": "hentai.js",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "An API wrapper for computerfreaker#4054's hentai endpoint!",
   "main": "Hentai.js",
   "devDependencies": {},
@@ -18,5 +18,9 @@
     "meme",
     "anime",
     "weeb"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snarkyllama/hentai.js"
+  }
 }
