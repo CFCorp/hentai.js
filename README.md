@@ -23,6 +23,6 @@ Made by snarkyllama™
 
 ## Links
 
-Github ~ [Click me!](https://github.com/snarkyllama/hentai.js)
+NPM ~ [Click me!](https://www.npmjs.com/package/hentai.js)
 
 computerfreaker's website ~ [Click me!](https://computerfreaker.cf/)
