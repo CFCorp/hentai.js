@@ -4,7 +4,7 @@
     "snekfetch": "^3.6.4"
   },
   "name": "hentai.js",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An API wrapper for computerfreaker#4054's hentai endpoint!",
   "main": "Hentai.js",
   "devDependencies": {},
@@ -12,5 +12,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "snarkyllama",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "keywords": [
+    "hentai",
+    "meme",
+    "anime",
+    "weeb"
+  ]
 }
