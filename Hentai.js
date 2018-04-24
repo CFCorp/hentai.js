@@ -4,14 +4,27 @@ const { version } = require("./package.json");
 
 class HentaiJS {
     hentai() {
-        return new Promise((result) => {
+        return new Promise((result, reject) => {
             try {
                 snek.get("https://computerfreaker.cf/api/hentai/read.php")
                     .then(r => {
                         result(r.body.url);
                     });
             } catch (err) {
-                console.log(`[${ansicolors.red("Error!")}] :: ${err.stack}`);
+                reject(`[${ansicolors.red("Error!")}] :: ${err.stack}`);
+            }
+        });
+    }
+
+    anime() {
+        return new Promise((result, reject) => {
+            try {
+                snek.get("https://computerfreaker.cf/api/anime/read.php")
+                    .then(r => {
+                        result(r.body.url);
+                    });
+            } catch (err) {
+                reject(`[${ansicolors.red("Error!")}] :: ${err.stack}`);
             }
         });
     }
