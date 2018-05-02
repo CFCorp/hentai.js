@@ -6,7 +6,7 @@ class HentaiJS {
     hentai() {
         return new Promise((result, reject) => {
             try {
-                snek.get("https://computerfreaker.cf/api/hentai/read.php")
+                snek.get("https://api.computerfreaker.cf/hentai")
                     .then(r => {
                         result(r.body.url);
                     });
@@ -19,7 +19,7 @@ class HentaiJS {
     anime() {
         return new Promise((result, reject) => {
             try {
-                snek.get("https://computerfreaker.cf/api/anime/read.php")
+                snek.get("https://api.computerfreaker.cf/anime")
                     .then(r => {
                         result(r.body.url);
                     });
