@@ -1,6 +1,6 @@
 ## Hentai.js ~ A Hentai API wrapper!
 
-An API wrapper for computerfreaker's [hentai endpoint](https://computerfreaker.cf/api/hentai/read.php) and [anime endpoint](https://computerfreaker.cf/api/anime/read.php)!
+An API wrapper for computerfreaker's [hentai endpoint](https://api.computerfreaker.cf/v1/hentai) and [anime endpoint](https://api.computerfreaker.cf/v1/anime)!
 
 **An Example for usage:**
 ```js
