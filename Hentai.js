@@ -1,36 +1,77 @@
-const snek = require("snekfetch");
 const ansicolors = require("ansicolors");
-const { version } = require("./package.json");
 
 class HentaiJS {
+    constructor() {
+        this._snek = require("snekfetch");
+        this.version = require("./package.json").version;
+    }
+
+    /**
+    * Gives some hentai (NSFW) :^)
+    */
     hentai() {
         return new Promise((result, reject) => {
             try {
-                snek.get("https://api.computerfreaker.cf/v1/hentai")
+                this._snek.get("https://api.computerfreaker.cf/v1/hentai")
                     .then(r => {
                         result(r.body.url);
                     });
             } catch (err) {
-                reject(`[${ansicolors.red("Error!")}] :: ${err.stack}`);
+                reject(console.log(`[${ansicolors.red("Error!")}] :: ${err.stack}`));
             }
         });
     }
 
+    /**
+    * Gives some anime :^)
+    */
     anime() {
         return new Promise((result, reject) => {
             try {
-                snek.get("https://api.computerfreaker.cf/v1/anime")
+                this._snek.get("https://api.computerfreaker.cf/v1/anime")
                     .then(r => {
                         result(r.body.url);
                     });
             } catch (err) {
-                reject(`[${ansicolors.red("Error!")}] :: ${err.stack}`);
+                reject(console.log(`[${ansicolors.red("Error!")}] :: ${err.stack}`));
+            }
+        });
+    }
+
+    /**
+    * Gives some D.VA (some NSFW) :^)
+    */
+    dva() {
+        return new Promise((result, reject) => {
+            try {
+                this._snek.get("https://api.computerfreaker.cf/v1/dva")
+                    .then(r => {
+                        result(r.body.url);
+                    });
+            } catch (err) {
+                reject(console.log(`[${ansicolors.red("Error!")}] :: ${err.stack}`));
+            }
+        });
+    }
+
+    /**
+    * Gives some traps (some NSFW) :^)
+    */
+    trap() {
+        return new Promise((result, reject) => {
+            try {
+                this._snek.get("https://api.computerfreaker.cf/v1/trap")
+                    .then(r => {
+                        result(r.body.url);
+                    });
+            } catch (err) {
+                reject(console.log(`[${ansicolors.red("Error!")}] :: ${err.stack}`));
             }
         });
     }
 
     version() {
-        console.log(`[${ansicolors.blue("Version")}] :: v${version}`);
+        console.log(`[${ansicolors.blue("Version")}] :: v${this.version}`);
     }
 }
 
