@@ -1,6 +1,6 @@
 ## Hentai.js ~ A Hentai API wrapper!
 
-An API wrapper for computerfreaker's [hentai endpoint](https://api.computerfreaker.cf/v1/hentai) and [anime endpoint](https://api.computerfreaker.cf/v1/anime)!
+An API wrapper for computerfreaker's API endpoints!
 
 **An Example for usage:**
 ```js
@@ -21,6 +21,30 @@ hentaiClient.version();
 // Fetching anime
 
 hentaiClient.anime().then((result) => {
+    console.log(result);
+});
+
+// Fetching D.VA
+
+hentaiClient.dva().then((result) => {
+    console.log(result);
+});
+
+// Fetching traps
+
+hentaiClient.trap().then((result) => {
+    console.log(result);
+});
+
+// Fetching hugs
+
+hentaiClient.hug().then((result) => {
+    console.log(result);
+});
+
+// Fetching baguettes
+
+hentaiClient.baguette().then((result) => {
     console.log(result);
 });
 ```

@@ -70,6 +70,38 @@ class HentaiJS {
         });
     }
 
+    /**
+    * Gives some hugs :^)
+    */
+    hug() {
+        return new Promise((result, reject) => {
+            try {
+                this._snek.get("https://api.computerfreaker.cf/v1/hug")
+                    .then(r => {
+                        result(r.body.url);
+                    });
+            } catch (err) {
+                reject(console.log(`[${ansicolors.red("Error!")}] :: ${err.stack}`));
+            }
+        });
+    }
+
+    /**
+    * Get some baguettes :^) 
+    */
+    baguette() {
+        return new Promise((result, reject) => {
+            try {
+                this._snek.get("https://api.computerfreaker.cf/v1/baguette")
+                    .then(r => {
+                        result(r.body.url);
+                    });
+            } catch (err) {
+                reject(console.log(`[${ansicolors.red("Error!")}] :: ${err.stack}`));
+            }
+        });
+    }
+
     version() {
         console.log(`[${ansicolors.blue("Version")}] :: v${this.version}`);
     }
