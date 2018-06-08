@@ -102,8 +102,8 @@ class HentaiJS {
         });
     }
 
-    version() {
-        console.log(`[${ansicolors.blue("Version")}] :: v${this.version}`);
+    get version() {
+        return this.version;
     }
 }
 

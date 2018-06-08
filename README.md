@@ -18,7 +18,7 @@ hentaiClient.hentai().then((result) => {
 
 // Getting hentai.js' version
 
-hentaiClient.version();
+hentaiClient.version;
 
 // Fetching anime
 
