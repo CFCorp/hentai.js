@@ -1,3 +1,5 @@
+![haha yes](https://rei-is-a.good-waifu.pw/MK0RTRF.png)
+
 ## Hentai.js ~ A Hentai API wrapper!
 
 An API wrapper for computerfreaker's API endpoints!
