@@ -3,7 +3,6 @@ const ansicolors = require("ansicolors");
 class HentaiJS {
     constructor() {
         this._snek = require("snekfetch");
-        this.version = require("./package.json").version;
     }
 
     /**
@@ -103,7 +102,7 @@ class HentaiJS {
     }
 
     get version() {
-        return this.version;
+        return require("./package.json").version;
     }
 }
 
