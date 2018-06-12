@@ -1,16 +1,11 @@
 {
   "dependencies": {
-    "ansicolors": "^0.3.2",
     "snekfetch": "^3.6.4"
   },
   "name": "hentai.js",
-  "version": "1.3.3",
-  "description": "An API wrapper for computerfreaker#4054's hentai and anime endpoint!",
+  "version": "1.3.4",
+  "description": "An API wrapper for computerfreaker#4054's API endpoints!",
   "main": "Hentai.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "snarkyllama",
   "license": "Apache-2.0",
   "keywords": [
