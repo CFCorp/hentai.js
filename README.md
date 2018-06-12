@@ -8,7 +8,9 @@ An API wrapper for computerfreaker's API endpoints!
 ```js
 const Hentai = require("hentai.js");
 
-const hentaiClient = new Hentai();
+const hentaiClient = new Hentai({
+    useragent: "Example/Production/0.0.0" // optional useragent (you'll be given a shitty hentai.js useragent if you don't edit this)
+});
 
 // Fetching Hentai
 
@@ -54,7 +56,5 @@ hentaiClient.baguette().then((result) => {
 Made by snarkyllama™
 
 ## Links
-
-NPM ~ [Click me!](https://www.npmjs.com/package/hentai.js)
 
 computerfreaker's website ~ [Click me!](https://computerfreaker.cf/)
