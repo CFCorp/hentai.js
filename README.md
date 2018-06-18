@@ -6,9 +6,9 @@ An API wrapper for computerfreaker's API endpoints!
 
 **An Example for usage:**
 ```js
-const Hentai = require("hentai.js");
+const { HentaiClient } = require("hentai.js");
 
-const hentaiClient = new Hentai({
+const hentaiClient = new HentaiClient({
     useragent: "Example/Production/0.0.0" // optional useragent (you'll be given a shitty hentai.js useragent if you don't edit this)
 });
 
